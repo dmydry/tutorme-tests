@@ -1,0 +1,14 @@
+{
+  "name": "tutorme-tests",
+  "version": "0.0.1",
+  "description": "",
+  "dependencies": {
+    "codeceptjs": "^0.3.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "codeceptjs run --steps"
+  },
+  "author": "Dmitriy Gurinenko",
+  "license": "ISC"
+}
