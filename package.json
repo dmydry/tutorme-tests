@@ -3,13 +3,16 @@
   "version": "0.0.1",
   "description": "",
   "dependencies": {
-    "codeceptjs": "^0.3.3"
+    "codeceptjs": "https://github.com/dmydry/CodeceptJS/tarball/03013b0c2d493e4ddef383f35558749dac584952"
   },
   "devDependencies": {
     "webdriverio": "^4.0.5"
   },
   "scripts": {
-    "test": "codeceptjs run --steps"
+    "test": "npm run test-ff && npm run test-gh && npm run test-sa",
+    "test-ff": "BROWSER_TEST=${BROWSER_TEST:=firefox} codeceptjs run --steps",
+    "test-gh": "BROWSER_TEST=${BROWSER_TEST:=chrome} codeceptjs run --steps",
+    "test-sa": "BROWSER_TEST=${BROWSER_TEST:=safari} codeceptjs run --steps"
   },
   "author": "Dmitriy Gurinenko",
   "license": "ISC"

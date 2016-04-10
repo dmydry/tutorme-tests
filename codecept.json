@@ -4,8 +4,7 @@
   "output": "./output",
   "helpers": {
     "WebDriverIO": {
-      "url": "http://localhost",
-      "browser": "firefox"
+      "url": "http://localhost"
     }
   },
   "include": {
