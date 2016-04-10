@@ -5,7 +5,9 @@
   "dependencies": {
     "codeceptjs": "^0.3.3"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "webdriverio": "^4.0.5"
+  },
   "scripts": {
     "test": "codeceptjs run --steps"
   },
